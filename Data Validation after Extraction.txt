@@ -1,0 +1,2 @@
+1 Count the number of rows and compare between The OLTP and Staging layer
+2 
