@@ -1,2 +1,5 @@
 1 Count the number of rows and compare between The OLTP and Staging layer
 2 Compare Data Types of columns OLTP and Staging layer
+
+
+we can create table called validation_log to hold the results history
