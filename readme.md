@@ -37,46 +37,50 @@ Dataset is used from [this](https://medium.com/@williamong1400/project-1-solving
 
 ##  Folder Structure
 Retail Data Warehouse Project:.
-|   readme.md
-|   
-+---data
-|       feedback_dataset.csv     
-|       order_dataset.csv        
-|       order_item_dataset.csv   
-|       payment_dataset.csv      
-|       product_dataset.csv      
-|       seller_dataset.csv       
-|       user_dataset.csv
-|       
-+---db_scripts
-|       database.sql
-|       retail_data_project_OLTP_relationship.drawio
-|
-+---Extract data and check
-|   +---Data Validation
-|   |       create the validation log table.sql
-|   |       Data Validation after Extraction.txt
-|   |       Data validation Compare Data Type.sql
-|   |       Data validation Count Rows.sql
-|   |
-|   \---Extract
-|           Extract Script.sql
-|
-+---MSSQL generator
-|       mix_generator.py
-|       tempCodeRunnerFile.py
-|
-+---OLAP design and code  script
-|       create the OLAP script.sql
-|       retail_data_project_OLAP .drawio
-|       retail_data_project_OLAP .drawio.png
-|
-\---Transformation and load
-        insert values into date dimension.sql
-        transformation and load data into bridge .sql
-        Transformation and load Script for Dimensions.sql
-        Transformation and loading the data into fact Table.sql
-        
+
+```text
+Retail Data Warehouse Project
+│   readme.md
+│
+├── data
+│   ├── feedback_dataset.csv     
+│   ├── order_dataset.csv        
+│   ├── order_item_dataset.csv   
+│   ├── payment_dataset.csv      
+│   ├── product_dataset.csv      
+│   ├── seller_dataset.csv       
+│   └── user_dataset.csv
+│
+├── db_scripts
+│   ├── database.sql
+│   └── retail_data_project_OLTP_relationship.drawio
+│
+├── Extract data and check
+│   ├── Data Validation
+│   │   ├── create the validation log table.sql
+│   │   ├── Data Validation after Extraction.txt
+│   │   ├── Data validation Compare Data Type.sql
+│   │   └── Data validation Count Rows.sql
+│   │
+│   └── Extract
+│       └── Extract Script.sql
+│
+├── MSSQL generator
+│   ├── mix_generator.py
+│   └── tempCodeRunnerFile.py
+│
+├── OLAP design and code script
+│   ├── create the OLAP script.sql
+│   ├── retail_data_project_OLAP.drawio
+│   └── retail_data_project_OLAP.drawio.png
+│
+└── Transformation and load
+    ├── insert values into date dimension.sql
+    ├── transformation and load data into bridge.sql
+    ├── Transformation and load Script for Dimensions.sql
+    └── Transformation and loading the data into fact Table.sql
+```
+ذذ   
 ##  Design OLAP
 The DWH follows a **star schema** with:
 - **Dimensions**:  
