@@ -102,13 +102,12 @@ CREATE TABLE fact_order (
 -- Bridge Table (Order Items)
 -- ==========================
 
+drop table dim_order_items_bridge
 CREATE TABLE dim_order_items_bridge (
     order_id VARCHAR(32),
     product_sk INT,
     seller_sk INT,
-    price FLOAT,
-    shipping_cost FLOAT,
-    PRIMARY KEY(order_id, product_sk, seller_sk),
+
     FOREIGN KEY (order_id) REFERENCES fact_order(order_id),
     FOREIGN KEY (product_sk) REFERENCES dim_product(product_sk),
     FOREIGN KEY (seller_sk) REFERENCES dim_seller(seller_sk)
