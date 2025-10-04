@@ -20,7 +20,7 @@ Ecommerce website dataset is ready for you to build data warehouse for to answer
 ## Resources:
 Dataset is used from [this](https://medium.com/@williamong1400/project-1-solving-problem-in-e-commerce-with-data-ac7ed38d7b4) series. I just played around with it using pandas, numpy and [sdv](https://github.com/sdv-dev/SDV) to transform the limited files into an endless stream of data. I then created a mysql database to serve as a destination for the generated data - to act as an operational data store if you can say so -.
 **Note** Eng Ahmed shaaban made  Project Overview, Requirements and provide the OLTP 
-         https://github.com/ahmedshaaban1999/retail_data_project
+         [link](https://github.com/ahmedshaaban1999/retail_data_project)
 ## Requirements:
 -	Design Data warehouse schema.
 -	Build ETL pipeline to load data into DW
