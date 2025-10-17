@@ -5,7 +5,7 @@ import os
 # -------------------
 # Database connection
 # -------------------
-def connect_to_database(server='DESKTOP-Q2DO090', database='online_store'):
+def connect_to_database(server='enter Your own one', database='online_store'):
     connection_string = (
         "DRIVER={ODBC Driver 17 for SQL Server};"
         f"SERVER={server};"
