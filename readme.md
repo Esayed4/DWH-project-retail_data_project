@@ -80,8 +80,7 @@ Retail Data Warehouse Project
     ├── transformation and load data into bridge.sql
     ├── Transformation and load Script for Dimensions.sql
     └── Transformation and loading the data into fact Table.sql
-```
-ذذ   
+```   
 ##  Design OLAP
 The DWH follows a **star schema** with:
 - **Dimensions**:  
@@ -94,7 +93,9 @@ The DWH follows a **star schema** with:
 - **Fact Table**:  
   - `fact_order` → stores order metrics (status, total amount, durations, arrival flag)  
 - **Bridge Table**:  
-  - `dim_order_items_bridge` → handles many-to-many between orders and products  <img width="682" height="1372" alt="retail_data_project_OLAP  drawio" src="https://github.com/user-attachments/assets/52a9016f-e31c-4b78-9528-695d5aa458f4" />
+  - `dim_order_items_bridge` → handles many-to-many between orders and products
+  
+  <img width="682" height="1372" alt="retail_data_project_OLAP  drawio" src="https://github.com/user-attachments/assets/52a9016f-e31c-4b78-9528-695d5aa458f4" />
 
 ##  ETL Process
 The ETL is split into 3 main stages:
